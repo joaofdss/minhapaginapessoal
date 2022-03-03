@@ -1,0 +1,73 @@
+<html>
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Minha pagina</title> 
+  <style>
+    body{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1{
+        color: rgb(7, 67, 30);
+    }
+
+    li, p{
+        color: rgba(7, 20, 77, 36);
+        
+    }
+
+   input{
+        
+        color:  blue;
+        margin-bottom: 2rem;
+    }
+
+    button{
+        font-size: 2rem;
+        width:  10.5rem;
+        border-radius: 12px;
+    }
+
+
+</style>
+ </head> 
+ <body> 
+  <img src="https://st2.depositphotos.com/42546960/43300/v/380/depositphotos_433007888-stock-illustration-letter-logo-design-vector-template.jpg?forcejpeg=true" alt="joao felipe dos santos sousa"> 
+  <h1>SOBRE </h1> 
+  <p>Sou João felipe dos Santos Sousa, estudante de Engenharia Eletrica da FSA, pretendo me tornar programador fullstack.</p> 
+  <h1>CURSOS</h1> 
+  <h1>Minhas linguagens de programação</h1> 
+  <ul> 
+   <li>SQL</li> 
+   <li>HTML</li> 
+   <li>Python3</li> 
+   <li>PHP</li> 
+   <li>Java Script</li> 
+  </ul> 
+  <p>Estou buscando me formar na área de tecnologia porque é uma area que tenho apego e que me identifico com as minhas habilidades </p> 
+  <h2>Cadastre-se para receber novas informações!!</h2> 
+  <input id="caixa_nome" type="text" placeholder="Digite seu nome aqui!!"> 
+  <input id="caixa_email" type="text" placeholder="Digite seu email aqui!!"> <button id="btn_cadastrar">Cadastrar</button> 
+  <script>
+    const comp_btn_cadastrar = document.getElementById('btn_cadastrar');
+    const comp_caixa_nome = document.getElementById('caixa_nome');
+    const comp_caixa_email = document.getElementById('caixa_email');
+
+    comp_btn_cadastrar.onclick = () => { 
+        const nome = comp_caixa_nome.value;
+        const email = comp_caixa_email.value;
+
+        const mensagem = "Olá " + nome +  " obrigado por cadastrar seu email: "+ email + " - iremos enviar novos conteúdos. Abraços!!"
+        alert(mensagem);
+};
+
+  
+</script> 
+ 
+</body></html>
